@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3a59b7">
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="376dp"
+        android:layout_height="179dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="18dp"
+        android:background="@drawable/rounded_corner"
+        android:clipToOutline="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/menuTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/titanone_regular"
+        android:text="MENU"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backgroundImage" />
+
+    <View
+        android:id="@+id/menuDivider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ranking_divider_gradient"
+        app:layout_constraintTop_toBottomOf="@id/menuTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menuDivider"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menuDivider">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp">
+
+            <View
+                android:layout_width="200dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/button_shadow" />
+
+            <Button
+                android:id="@+id/playButton"
+                android:layout_width="200dp"
+                android:layout_height="55dp"
+                android:backgroundTint="#F5C51A"
+                android:fontFamily="@font/titanone_regular"
+                android:stateListAnimator="@null"
+                android:text="PLAY"
+                android:textColor="@color/button_text_color"
+                android:textSize="20sp"
+                app:cornerRadius="18dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp">
+
+            <View
+                android:layout_width="200dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/button_shadow" />
+
+            <Button
+                android:id="@+id/rankingButton"
+                android:layout_width="200dp"
+                android:layout_height="55dp"
+                android:backgroundTint="#F5C51A"
+                android:fontFamily="@font/titanone_regular"
+                android:stateListAnimator="@null"
+                android:text="RANKING"
+                android:textColor="@color/button_text_color"
+                android:textSize="20sp"
+                app:cornerRadius="18dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="200dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/button_shadow" />
+
+            <Button
+                android:id="@+id/quitButton"
+                android:layout_width="200dp"
+                android:layout_height="55dp"
+                android:backgroundTint="#F5C51A"
+                android:fontFamily="@font/titanone_regular"
+                android:stateListAnimator="@null"
+                android:text="QUIT"
+                android:textColor="@color/button_text_color"
+                android:textSize="20sp"
+                app:cornerRadius="18dp" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
